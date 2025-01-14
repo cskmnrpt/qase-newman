@@ -1,0 +1,11 @@
+{
+  "mode": "testops",
+  "testops": {
+    "uploadAttachments": true,
+    "api": {
+      "token": "<token>"
+    },
+    "project": "<prj>"
+  }
+} 
+
