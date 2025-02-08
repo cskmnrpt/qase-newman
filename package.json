@@ -1,0 +1,35 @@
+{
+  "name": "qase-newman",
+  "version": "2.0",
+  "description": "A demo repository with Examples, for troubleshooting problems and for feature requests.",
+  "main": "",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "QASE_MODE=testops npx newman run -r qase",
+    "qase": "QASE_MODE=testops npx newman run https://www.postman.com/collections/18029358-6d326cbd-e4cf-477f-8d23-bfa662cb1e33 --env-var 'baseUrl=https://api.qase.io/v1' -r qase",
+    "param": "QASE_MODE=testops npx newman run ./collections/param-collection.json -d data/user-data.csv -r qase"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cskmnrpt/qase-newman.git"
+  },
+  "keywords": [
+    "qase-newman",
+    "qaseio",
+    "qase-tms",
+    "qase-javascript"
+  ],
+  "author": "Qase Support",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/cskmnrpt/qase-newman/issues"
+  },
+  "homepage": "https://github.com/cskmnrpt/qase-newman#readme",
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-qase": "^2.0.4",
+    "prettier": "^3.4.2"
+  }
+}

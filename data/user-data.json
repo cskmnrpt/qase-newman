@@ -1,0 +1,20 @@
+[
+  {
+    "userid": 1,
+    "user": {
+      "name": "Leanne Graham"
+    }
+  },
+  {
+    "userid": 2,
+    "user": {
+      "name": "Ervin Howell"
+    }
+  },
+  {
+    "userid": 3,
+    "user": {
+      "name": "Clementine Bauch"
+    }
+  }
+]
